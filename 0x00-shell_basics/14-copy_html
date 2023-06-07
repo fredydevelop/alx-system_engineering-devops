@@ -1,10 +1,2 @@
 #!/bin/bash
-html_files=$(find . -maxdepth 1 -type f -name "*.html")  
-
-for allfile in $html_files; do
-    location_of_file=$(basename "$allfile")  
-    destination="../$location_of_file"  
-
-    
-    cp -u "$allfile" "$destination"
-done
+cp -ru --no-clobber ./*.html ../
