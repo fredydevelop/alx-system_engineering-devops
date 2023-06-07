@@ -1,2 +1,6 @@
 #!/bin/bash
-mkdir -p /tmp/u && mv [A-Z]* /tmp/u/
+for all_file in [A-Z]*; do
+    if [[ -f "$all_file" ]]; then
+        mv "$all_file" /tmp/u/
+    fi
+done
