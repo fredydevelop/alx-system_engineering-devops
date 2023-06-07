@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ -n "$(ls [A-Z]*)" ]; then mv [A-Z]* /tmp/u/; fi
+if [ -n "$(ls [A-Z]*)" ] then mv [A-Z]* /tmp/u/ fi
