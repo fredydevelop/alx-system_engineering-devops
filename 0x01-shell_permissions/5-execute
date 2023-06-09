@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x hello
+(umask 002; chmod u+x hello) &
