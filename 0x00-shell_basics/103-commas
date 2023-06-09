@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap1 | grep -v '/$' | LC_COLLATE=C sort -df | tr '\n' ',' | sed 's/,$/\n/'; ls -ap1 | grep '/$' | LC_COLLATE=C sort -df | tr '\n' ',' | sed 's/,$/\n/'
+ls -Ap | LC_COLLATE=C sort -df | awk '{printf("%s, ", $0)} END {print ""}'
